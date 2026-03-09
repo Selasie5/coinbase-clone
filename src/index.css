@@ -1,0 +1,140 @@
+:root{
+  --primary: #0052FF;
+  --coinbase-black: #0A0B0D;
+  --coinbase-gray-1: #DADCE0;
+  --coinbase-gray-2: #E8EAED;
+  --coinbase-gray-3: #EEF0F3;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSEL.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSELI.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSL.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSLI.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSR.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSRI.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSM.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSMI.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Sans;
+  src: url('./public/fonts/CSBI.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Coinbase Display */
+@font-face {
+  font-family: Coinbase Display;
+  src: url('./public/fonts/coinbase-display.woff2') format(woff2);
+}
+/* Coinbase Mono */
+@font-face {
+  font-family: Coinbase Mono;
+  src: url('./public/fonts/mono/Coinbase_Mono-Extra_Light-web.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Mono;
+  src: url('./public/fonts/mono/Coinbase_Mono-Light-web.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Mono;
+  src: url('./public/fonts/mono/Coinbase_Mono-Regular-web.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Mono;
+  src: url('./public/fonts/mono/Coinbase_Mono-Medium-web.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Coinbase Mono;
+  src: url('./public/fonts/mono/Coinbase_Mono-Bold-web.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.icons{
+  font-family: "CoinbaseIcons";
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Coinbase Display";
+}
+
+p,span,button,a,ul,li, input, div{
+  font-family: "Coinbase Sans";
+}

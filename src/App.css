@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-coinbase-sans: 'Coinbase Sans', sans-serif;
+  --font-coinbase-mono: 'Coinbase Mono', monospace;
+  --font-coinbase-display: 'Coinbase Display', sans-serif;
+ 
+}
+
