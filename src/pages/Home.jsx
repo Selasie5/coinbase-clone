@@ -1,5 +1,5 @@
 import image from "../assets/hero.png"
-import Advanced from "../assets/advanced.png"
+import Advanced from "../assets/Advanced.png"
 import ZeroFees from "../assets/zero_fees_us.png"
 import BaseApp from "../assets/base_app.png"
 import Image from "../assets/image.png"
