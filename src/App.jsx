@@ -5,6 +5,9 @@ import SignIn from "./pages/SignIn";
 import AppLayout from "./components/layout/AppLayout";
 import Learn from "./pages/Learn";
 import Explore from "./pages/Explore";
+import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
+import ProtectedRoute from "./components/common/ProtectedRoute";
 
 const App = () => {
   return (
@@ -13,6 +16,22 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/explore" element={<Explore />} />
+        <Route 
+          path="/dashboard" 
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/profile" 
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          } 
+        />
       </Route>
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/SignIn" element={<SignIn />} />

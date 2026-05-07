@@ -64,14 +64,19 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto mt-5 flex max-w-[1280px] flex-col gap-3 md:flex-row md:items-center md:justify-between">
-        <div className="flex flex-wrap gap-2">
-          <p>&copy; {new Date().getFullYear()} Coinbase</p>
-          <a href="" className="text-gray-500">
-            &middot; {t("privacy")}
-          </a>
-          <a href="" className="text-gray-500">
-            &middot; {t("terms")}
-          </a>
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-wrap gap-2">
+            <p>&copy; {new Date().getFullYear()} Crypto App | Student Project</p>
+            <a href="" className="text-gray-500">
+              &middot; {t("privacy")}
+            </a>
+            <a href="" className="text-gray-500">
+              &middot; {t("terms")}
+            </a>
+          </div>
+          <p className="text-xs text-gray-500 mt-2">
+            Disclaimer: This website is a student project for educational purposes only. It is not a real cryptocurrency platform and is not affiliated with Coinbase. Please do not enter real personal information or passwords.
+          </p>
         </div>
 
         <div className="flex gap-2 md:justify-end">

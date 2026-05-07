@@ -6,6 +6,7 @@ import Megamenu from "./Megamenu";
 import LanguageRegionPicker from "../common/LanguageRegionPicker";
 import MarketSearchOverlay from "../search/MarketSearchOverlay";
 import { useLocale } from "../../context/LocaleContext";
+import { useAuth } from "../../context/AuthContext";
 import { MenuIcon, XIcon, SearchIcon, ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/outline";
 
 const Navbar = () => {
@@ -21,6 +22,8 @@ const Navbar = () => {
   const searchInputRef = useRef(null);
   const searchCloseTimerRef = useRef(null);
   const { t } = useLocale();
+  const { user } = useAuth();
+
 
   const cancelSearchClose = () => {
     if (!searchCloseTimerRef.current) return;
@@ -151,8 +154,17 @@ const Navbar = () => {
           controlledOpen={localeOpen}
           onOpenChange={setLocaleOpen}
         />
-        <Button children={t("signIn")} disabled className="hidden md:block" href="/SignIn" />
-        <Button children={t("signUp")} primary className="hidden md:block" href="/SignUp" />
+        {user ? (
+          <>
+            <Button children="Dashboard" className="hidden md:block" href="/dashboard" />
+            <Button children="Profile" primary className="hidden md:block" href="/profile" />
+          </>
+        ) : (
+          <>
+            <Button children={t("signIn")} className="hidden md:block" href="/SignIn" />
+            <Button children={t("signUp")} primary className="hidden md:block" href="/SignUp" />
+          </>
+        )}
       
         <button
           className="md:hidden bg-gray-100 p-2 rounded-full"
@@ -224,8 +236,17 @@ const Navbar = () => {
             ))
           )}
           <div className="flex gap-2 mt-4">
-            <Button children={t("signIn")} disabled href="/SignIn" />
-            <Button children={t("signUp")} primary href="/SignUp" />
+            {user ? (
+              <>
+                <Button children="Dashboard" className="flex-1" href="/dashboard" />
+                <Button children="Profile" primary className="flex-1" href="/profile" />
+              </>
+            ) : (
+              <>
+                <Button children={t("signIn")} className="flex-1" href="/SignIn" />
+                <Button children={t("signUp")} primary className="flex-1" href="/SignUp" />
+              </>
+            )}
           </div>
         </div>
       )}

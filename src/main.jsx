@@ -5,11 +5,14 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { LocaleProvider } from './context/LocaleContext.jsx'
+import { AuthProvider } from './context/AuthContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <LocaleProvider>
-        <App />
+        <AuthProvider>
+          <App />
+        </AuthProvider>
       </LocaleProvider>
     </BrowserRouter>
   </StrictMode>,
